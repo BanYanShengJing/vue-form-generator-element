@@ -23,7 +23,7 @@
       :required="schema.required"
       :readonly="schema.readonly"
       @blur="onBlur"
-      @change="schema.onChange || null"
+      @change="schema.onChange() || null"
     />
   </el-form-item>
   <el-form-item
